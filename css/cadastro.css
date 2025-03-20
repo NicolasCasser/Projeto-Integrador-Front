@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(34, 34, 34);
+    background-image: url('/img/FundoBlur.png');
     display: flex;
     justify-content: center;
     align-items: center;
