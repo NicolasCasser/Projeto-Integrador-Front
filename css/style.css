@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    margin-right: 10vw;
+}
+
+#titulo{
+    margin-left: 10vw;
+    display: flex;
+    line-height: 10px;
+}
+
+#titulo img{
+    height: 15vh;
+}
+
+.titulo {
+    margin-top: 0.5rem;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscrevase{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscrevase:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(87, 9, 133);
+}
+
+form a {
+    margin-top: 0.3rem;
+    text-decoration: underline;
+    color: rgb(132, 14, 201);
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#imagem img{
+    width: 45vw;
+    height: 100%;
+    margin-right: 10rem;
+}
+
+#inicio{
+    margin-left: 10vw;
+}
+

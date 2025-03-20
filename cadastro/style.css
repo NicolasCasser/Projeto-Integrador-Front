@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "Jersey 25", sans-serif;
+    background-color: #222222;
+}
+
+#cabecalho {
+    background-color: #2E2E2E;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.teste {
+    display: flex;
+    position: absolute;
+    right: 19vw;
+    align-items: center;
+    z-index: -1;
+}
+
+.icone {
+    border-radius: 50%;
+    width: 151px;
+    height: 134px;
+    padding-bottom: 9rem;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    margin-top: 2vw;
+    z-index: 3;
+}
+
+.links a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color:white;
+
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2vw;
+    border: solid 3px #840EC9;
+    padding: 0.2em;
+    border-radius: 3em;
+}
+
+.telaCadastro {
+    background-color: #2E2E2E;
+    border-radius: 57px;
+    width: 644px;
+    height: 645px;
+    margin-left: 35%;
+    margin-top: 4%;
+    border: solid 1px #f447fd63 
+}
+
+.telaCadastro span  {
+    color: #E83C84;
+    text-decoration: underline;
+    text-decoration-color: #f447fd67;
+    top: 5px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2vw;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 190px;
+
+}
