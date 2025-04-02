@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="shortcut icon" href="img/icoProConnect.png" type="image/x-icon">
     <title>ProConnect</title>
 </head>
@@ -15,14 +17,47 @@
             <div class="titulo">
                 <h1>Pro</h1>
                 <h1>Connect</h1>
-            </div> 
+            </div>
         </div>
 
         <ul>
             <li><a href="">Inicio</a></li>
             <li><a href="">Sobre</a></li>
             <li><a href="">Contato</a></li>
-            <li><a href="cadastro.html" id="inscrevase">Cadastrar</a></li>
+            <li><input type="checkbox" id="menuAberto">
+                <label for="menuAberto" class="abrirMenu">Registre-se</label>
+                <div class="desfocado">
+                    <div class="cadastrarSe">
+                        <div class="cadastrar">
+                            <h1>Cadastrar-se</h1>
+                            <br>
+                            <div class="infos">
+                                <form action="">
+                                    <div class="nome">
+                                        <label for="text" class="nomeUs">Nome de Usuário:</label>
+                                        <input type="text" required>
+                                    </div><br>
+                                    <div class="email">
+                                        <label for="email">E-Mail:</label>
+                                        <input type="text" required>
+                                    </div><br>
+                                    <div class="senha">
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" id="senha" required>
+                                    </div><br>
+                                    <div class="cSenha">
+                                        <label for="cSenha">Confirme sua Senha:</label>
+                                        <input type="password" id="cSenha" required>
+                                    </div>
+                                    <div class="acessar">
+                                        <button type="submit">Acessar</button>
+                                    </div>
+                                    <label for="menuAberto" class="fecharMenu"><img src="img/X.png"
+                                            alt=""></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
         </ul>
     </header>
 
@@ -30,7 +65,10 @@
         <aside id="inicio">
             <h2><span>Inscreva-se agora</span></h2>
             <h2>na ProConnect</h2>
-            <p>Na ProConnect, conectamos programadores freelancers a clientes em busca de soluções tecnológicas personalizadas. Encontre projetos alinhados às suas habilidades, amplie seu portfólio e colabore com empresas que valorizam seu talento. Inscreva-se agora e transforme seu conhecimento em oportunidades reais!</p>
+            <p>Na ProConnect, conectamos programadores freelancers a clientes em busca de soluções tecnológicas
+                personalizadas. Encontre projetos alinhados às suas habilidades, amplie seu portfólio e colabore com
+                empresas que valorizam seu talento. Inscreva-se agora e transforme seu conhecimento em oportunidades
+                reais!</p>
             <form action="">
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <input type="password" name="senha" id="senha" placeholder="Senha">
@@ -44,4 +82,5 @@
         </aside>
     </main>
 </body>
+
 </html>

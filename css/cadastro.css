@@ -1,78 +1,124 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('/img/FundoBlur.png');
+.abrirMenu {
+    font-family: "Jersey 25", sans-serif;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid #840EC9;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cadastrar h1 {
+    font-family: "JetBrains Mono", monospace;
+    color: #e83c84c3;
+    text-decoration: underline;
+}
+
+.desfocado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrarSe {
+    background: #222222;
+    width: 500px;
+    height: 550px;
+    border: 3px solid #e83c84c3;
+    border-radius: 86px 32px 86px 86px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fecharMenu {
+    color: #e83c84c3;
+    border: 2px solid #e83c84c3;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px 35px 7px 26px;
+    position: absolute;
+    top: -1.5px;
+    right: -1.2px;
+}
+
+.fecharMenu img {
+    max-width: 26px;
+    max-height: 30px;
+}
+
+#menuAberto {
+    display: none;
+}
+
+#menuAberto:checked ~ .desfocado {
+    display: flex;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.infos span {
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.infos input {
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    height: 40px;
+    width: 40px;
+    border-radius: 21px;
+    border: 1px solid #E83C84;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.infos label {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    display: flex;
+    color: #FFFFFF;
+    margin-left: 80px;
+    font-size: 1.1rem;
+}
+
+.acessar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    background-color: #1b1b1b;
+    padding: 64px 64px 64px 64px;
 }
 
-.box {
-    background-color: rgb(24, 23, 23);
-    width: 350px;
-    padding: 30px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-h2 {
-    margin-bottom: 5px;
-    color: #333;
-    text-align: center;
-    color: #6200ea;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-label {
-    color: #555;
-    margin-bottom: 5px;
+.acessar button {
     color: white;
+    border: 2px solid #e83c84c3;
+    font-size: 35px;
+    font-family: "JetBrains Mono", monospace;
+    background-color: #e83c84cb;
+    height: 60px;
+    width: 42%;
+    border-radius: 24px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    border-color: #6200ea;
-    box-shadow: 0 0 5px rgba(98, 0, 234, 0.3);
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.acessar button:hover {
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-input[type="submit"]:hover {
-    background-color: #4a00b4;
-}
-
-.botao {
-    display: flex;
-    justify-content: center;
+    transition: 0.2s;
+    background-color: #e83c8490;
 }
