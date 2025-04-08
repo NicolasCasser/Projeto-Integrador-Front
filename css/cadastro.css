@@ -93,8 +93,7 @@ input:focus {
 .acessar {
     justify-content: center;
     align-items: center;
-    background-color: #1b1b1b;
-    padding: 20px;
+padding: 20px;
 }
 
 .acessar button {

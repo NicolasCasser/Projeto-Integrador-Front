@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="shortcut icon" href="img/icoProConnect.png" type="image/x-icon">
+    <script src="js/script.js" defer></script>
     <title>ProConnect</title>
 </head>
 
@@ -20,7 +21,7 @@
             </div>
         </div>
 
-        <ul>
+        <ul class="links">
             <li><a href="">Inicio</a></li>
             <li><a href="">Sobre</a></li>
             <li><a href="">Contato</a></li>
@@ -32,7 +33,7 @@
                             <h1>Cadastrar-se</h1>
                             <br>
                             <div class="infos">
-                                <form action="">
+                                <form action="" id="formu">
                                     <div class="nome">
                                         <label for="text" class="nomeUs">Nome de Usuário:</label>
                                         <input type="text" required>
@@ -42,15 +43,16 @@
                                         <input type="text" required>
                                     </div><br>
                                     <div class="senha">
-                                        <label for="senha">Senha:</label>
-                                        <input type="password" id="senha" required>
+                                        <label for="senha" id="lSenha">Senha:</label>
+                                        <input type="password" id="senha" onkeyup="valida()">
                                     </div><br>
                                     <div class="cSenha">
                                         <label for="cSenha">Confirme sua Senha:</label>
                                         <input type="password" id="cSenha" required>
                                     </div>
+                                    <div id="mErro"></div>
                                     <div class="acessar">
-                                        <button type="submit">Acessar</button>
+                                        <button type="buttom" onclick="enviar()" onkeyup="alerta()">Acessar</button>
                                     </div>
                                     <label for="menuAberto" class="fecharMenu"><img src="img/X.png"
                                             alt=""></label>
@@ -69,11 +71,11 @@
                 personalizadas. Encontre projetos alinhados às suas habilidades, amplie seu portfólio e colabore com
                 empresas que valorizam seu talento. Inscreva-se agora e transforme seu conhecimento em oportunidades
                 reais!</p>
-            <form action="">
+            <form action="" id="login">
                 <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 <a href="">Esqueci minha senha</a>
-                <input type="submit" name="enviar" id="enviar" value="Entrar">
+                <input type="submit" name="enviar" id="enviar" value="Entrar" required>
             </form>
         </aside>
 

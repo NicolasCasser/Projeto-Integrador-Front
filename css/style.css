@@ -22,6 +22,11 @@ header ul {
     line-height: 10px;
 }
 
+#titulo h1{
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+}
+
 #titulo img{
     height: 15vh;
 }
@@ -69,7 +74,8 @@ main{
 }
 
 h2{
-    font-size: 56px;
+    font-size: 50px;
+    font-family: "Jockey One", sans-serif; 
     line-height: 10px;
 }
 
@@ -127,3 +133,20 @@ input{
     margin-left: 10vw;
 }
 
+#inicio p {
+    font-family: "Jockey One", sans-serif;  
+}
+
+.links {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1vw;
+}
+
+#mErro {
+    background-color: rgb(34, 34, 34);
+    border: solid, 2px, #e83ca9b6;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 7vw;
+    right: 2vw;
+}
