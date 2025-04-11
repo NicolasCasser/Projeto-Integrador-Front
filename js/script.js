@@ -33,7 +33,7 @@ function valida() {
     const lSenha = document.getElementById("lSenha");
     const iSenha = document.getElementById("senha");
 
-    if (senha.length < 10) {
+    if (senha.length < 7) {
 
         iSenha.style.border = ("solid, 2px, red")
     }
@@ -42,7 +42,7 @@ function valida() {
         iSenha.style.border = ("solid, 2px,rgb(255, 176, 4)")
     }
     if (senha.length > 14) {
- 
+
         iSenha.style.border = ("solid, 2px, green")
     }
 }
