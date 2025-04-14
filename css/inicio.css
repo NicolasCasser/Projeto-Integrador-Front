@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    width: 100vw;
+    background-color: #2E2E2E;
+    justify-content: space-between;
+}
+
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+.cabecalho {
+    display: flex;
+    margin-left: 2vw;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5vh;
+    color: white;
+}
+
+.links ul{
+    display: flex;
+    margin-right: 2vw;
+    list-style: none;
+}
+
+.links ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 17px;
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.links ul li a:hover {
+    color: rgb(132, 14, 201);
+}
+
+.geral{
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartoes {
+    width: 85vw;
+    height: 80vh;
+    display: flex;
+    background-color: #2E2E2E;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardsBack {
+    width: 20vw;
+    height: 34vh;
+    background-color: #222222;
+    margin: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.usuario {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+.usuario img {
+    height: 60px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.pedido {
+    text-align: justify;
+    padding: 0 3rem;
+    color: white;
+}
+
+.geral a {
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    bottom: 15px;
+    right: 40%;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 10px;
+}
