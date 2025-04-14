@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jockey+One&display=swap');
+
+body{
+    background-color: #222222;
+    color: white;
+    margin: 0 auto;
+    padding:0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    margin-right: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+#titulo{
+    margin-left: 10vw;
+    display: flex;
+    line-height: 10px;
+}
+
+#titulo h1{
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+}
+
+#titulo img{
+    height: 15vh;
+}
+
+.titulo {
+    margin-top: 0.5rem;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+
+a{
+    font-family: "Jersey 25", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+.icones {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.icones i:hover {
+    cursor: pointer;
+}
+
+.eSenha {
+    color: #E83C84;
+    font-family: "JetBrains Mono", monospace;
+    display:flex;
+    font-size: 35px;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.desc {
+    margin-left: 5vw;
+    display: flex;
+    font-family: "JetBrains Mono", monospace;
+    flex-direction: column;
+    width: 25%;
+    font-size: 25px;
+}
+
+.email input {
+    margin-left: 5vw;
+    margin-top: 2vw;
+    font-size: 20px;
+    height: 3vw;
+    border-radius: 230px;
+    width: 25vw;
+}
+
+.email button {
+    margin-top: 20px;
+    margin-left: 10.2vw;
+    color: white;
+    font-size: 40px;
+    border: #E83C84;
+    background-color: #E83C84;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 50px;
+}
+
+.imgg {
+    position: absolute;
+    display: flex;
+    bottom: 10vw;
+    right: 20vw;
+    align-items: center;
+}
