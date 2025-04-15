@@ -185,10 +185,11 @@ select {
     right: 15vw;
 }
 
-.navegar button {
+.navegarButton {
     background-color: #E83C84;
-    padding: 0.37vw;
+    padding: 1rem;
     width: 6vw;
-    border-radius: 10vw;
+    border-radius: 1.5rem;
     border: transparent;
+    text-decoration: none;
 }

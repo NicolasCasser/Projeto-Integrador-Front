@@ -98,7 +98,7 @@ login.addEventListener("submit", async (e) => {
         senha
     };
 
-    console.log(usuario);
+    console.log("Tentando logar com:", { email, senha });
     
     const response = await fetch("http://localhost:1212/login", {
         method: "POST",
