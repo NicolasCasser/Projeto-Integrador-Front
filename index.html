@@ -23,8 +23,8 @@
 
         <ul class="links">
             <li><a href="">Inicio</a></li>
-            <li><a href="Sobre nós/sobre.html">Sobre</a></li>
-            <li><a href="Sobre nós/sobre.html">Contato</a></li>
+            <li><a href="../Sobre nós/sobre.html">Sobre</a></li>
+            <li><a href="../Sobre nós/sobre.html">Contato</a></li>
             <li><input type="checkbox" id="menuAberto">
                 <label for="menuAberto" class="abrirMenu">Registre-se</label>
                 <div class="desfocado">
@@ -33,7 +33,7 @@
                             <h1>Cadastrar-se</h1>
                             <br>
                             <div class="infos">
-                                <form action="" id="formu">
+                                <form action="" id="formRegistro">
                                     <div class="nome">
                                         <label for="text" class="nomeUs">Nome de Usuário:</label>
                                         <input type="text" required>
@@ -70,10 +70,14 @@
                 personalizadas. Encontre projetos alinhados às suas habilidades, amplie seu portfólio e colabore com
                 empresas que valorizam seu talento. Inscreva-se agora e transforme seu conhecimento em oportunidades
                 reais!</p>
-            <form action="" id="login">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="password" name="senha" id="senha" placeholder="Senha" required>
-                <a href="Senha/senha.html">Esqueci minha senha</a>
+            <form action="" id="formLogin">
+                <div class="email">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                </div>
+                <div class="senha">
+                    <a href="Senha/senha.html">Esqueci minha senha</a>
+                </div>
                 <input type="submit" name="enviar" id="enviar" value="Entrar" required>
             </form>
         </aside>

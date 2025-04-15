@@ -112,3 +112,12 @@ padding: 20px;
     transition: 0.2s;
     background-color: #e83c8490;
 }
+
+#mErro {
+    background-color: rgb(34, 34, 34);
+    border: solid, 2px, #e83ca9b6;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 7vw;
+    right: 2vw;
+}
