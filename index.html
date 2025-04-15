@@ -36,11 +36,11 @@
                                 <form action="" id="formRegistro">
                                     <div class="nome">
                                         <label for="text" class="nomeUs">Nome de Usuário:</label>
-                                        <input type="text" required>
+                                        <input type="text" id="nome" required>
                                     </div><br>
                                     <div class="email">
                                         <label for="email">E-Mail:</label>
-                                        <input type="text" required>
+                                        <input type="text" id="email" required>
                                     </div><br>
                                     <div class="senha">
                                         <label for="senha" id="lSenha">Senha:</label>
@@ -51,8 +51,8 @@
                                         <input type="password" id="cSenha" required>
                                     </div>
                                     <div id="mErro"></div>
-                                    <div class="acessar">
-                                        <button type="buttom" onclick="enviar()" onkeyup="alerta()">Acessar</button>
+                                    <div class="acessar" >
+                                        <button type="submit" onkeyup="alerta()">Acessar</button>
                                     </div>
                                     <label for="menuAberto" class="fecharMenu"><img src="img/X.png" alt=""></label>
                                 </form>
@@ -70,10 +70,10 @@
                 personalizadas. Encontre projetos alinhados às suas habilidades, amplie seu portfólio e colabore com
                 empresas que valorizam seu talento. Inscreva-se agora e transforme seu conhecimento em oportunidades
                 reais!</p>
-            <form action="" id="formLogin">
-                <div class="email">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <form action="Navegacao/Nav.html" id="formLogin">
+                <div class="login">
+                    <input type="email" name="email" id="emailLogin" placeholder="E-mail" required>
+                    <input type="password" name="senha" id="senhaLogin" placeholder="Senha" required>
                 </div>
                 <div class="senha">
                     <a href="Senha/senha.html">Esqueci minha senha</a>
