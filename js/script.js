@@ -109,7 +109,7 @@ login.addEventListener("submit", async (e) => {
     });
 
     if(response.ok){
-        window.location.href = "../Perfil/usuario.html"
+        window.location.href = "../Navegacao/Nav.html"
     }else {
         alert("Erro ao fazer login!");
     }
