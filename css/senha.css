@@ -110,7 +110,7 @@ a:hover{
 .imgg {
     position: absolute;
     display: flex;
-    bottom: 10vw;
-    right: 20vw;
-    align-items: center;
+    right: 19vw;
+    top: 12vw;
+    opacity: 80%;
 }
