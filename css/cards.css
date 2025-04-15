@@ -59,6 +59,18 @@ header img {
     color: rgb(132, 14, 201);
 }
 
+.icones {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.icones i:hover {
+    cursor: pointer;
+}
+
 .geral{
     height: 87vh;
     display: flex;
