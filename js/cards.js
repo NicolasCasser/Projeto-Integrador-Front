@@ -26,7 +26,7 @@ async function carregaPerfis() {
                 <h3>${perfil.titulo}</h3>
                 <p>${perfil.descricao}</p>
             </div>
-            <a href="#">Acessar</a>
+            <a href="../contato/contato.html">Acessar</a>
           </div>
         `;
       }).join('');
