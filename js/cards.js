@@ -1,40 +1,33 @@
-async function carregaPerfis() {
-    try {
-      // Busca os dados da API, altere a URL se necessário (ex: http://localhost:1212/perfis)
-      const response = await fetch("http://localhost:1212/perfis");
-  
-      if (!response.ok) {
-        console.error("Erro na requisição:", response.status);
-        return;
-      }
-  
-      // Converte a resposta para JSON
-      const perfis = await response.json();
-      console.log(perfis);
-  
-      // Seleciona a seção onde os cards serão inseridos
-      const cartoesContainer = document.getElementById("cartoes");
-  
-      // Mapeia os dados para criar o HTML de cada card e junta tudo em uma única string
-      cartoesContainer.innerHTML = perfis.map(perfil => {
-        return `
-          <div class="cardsBack">
-            <div class="usuario">
-                <h3>${perfil.nome}</h3>
-            </div>
-            <div class="pedido">
-                <h3>${perfil.titulo}</h3>
-                <p>${perfil.descricao}</p>
-            </div>
-            <a href="../contato/contato.html">Acessar</a>
-          </div>
-        `;
-      }).join('');
-  
-    } catch (error) {
-      console.error("Erro ao carregar perfis:", error);
-    }
-  }
-  
-  // Garante que a função seja chamada depois que a página estiver totalmente carregada
-  document.addEventListener("DOMContentLoaded", carregaPerfis);
+// Função para redirecionar
+function redirecionarParaContato(id) {
+  window.location.href = `../contato/contato.html?id=${id}`;
+}
+
+// Função para criar os cartões
+function criarCartoes(perfis) {
+  const cartoesContainer = document.querySelector('#cartoes');
+  cartoesContainer.innerHTML = perfis.map(perfil => {
+    return `
+      <div class="cardsBack">
+        <div class="usuario">
+          <h3>${perfil.nome}</h3>
+        </div>
+        <div class="pedido">
+          <h3>${perfil.titulo}</h3>
+          <p>${perfil.descricao}</p>
+        </div>
+        <button onclick="redirecionarParaContato(${perfil.id})" class="btn-acessar">Acessar</button>
+      </div>
+    `;
+  }).join('');
+}
+
+// Requisição para a API
+fetch('http://localhost:1212/perfis')
+  .then(response => response.json())
+  .then(data => {
+    criarCartoes(data);
+  })
+  .catch(error => {
+    console.error('Erro ao buscar perfis:', error);
+  });

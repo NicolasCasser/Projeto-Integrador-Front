@@ -1,28 +1,41 @@
-async function contato() {
-    const response = await fetch("http://localhost:1212/perfis");
+async function carregarPerfil() {
+  // Pega o ID da URL (query string)
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
-    const perfis = await response.json();
-    console.log(perfis);
-    
+  if (!id) {
+    console.error("ID não encontrado na URL");
+    return;
+  }
 
-    const cartoesContainer = document.getElementById("cartoes");
+  try {
+    // Faz a requisição para a API com o ID
+    const response = await fetch(`http://localhost:1212/perfis/${id}`);
 
-    cartoesContainer.innerHTML = perfis.map(perfil => {
-      return `
+    if (!response.ok) {
+      console.error("Erro ao buscar perfil:", response.status);
+      return;
+    }
+
+    const perfil = await response.json();
+
+    // Exibe as informações do perfil na tela
+    const cardContainer = document.getElementById("card");
+
+    cardContainer.innerHTML = `
       <div class="card">
         <h1>${perfil.nome}</h1>
-        <img src="" alt="">
-            <div class="contato">
-            <i class="bi bi-envelope"></i>
-            <p>${perfil.email}</p>
+        <div class="email">
+          <i class="bi bi-envelope"></i>
+          <p>${perfil.email}</p>
         </div>
-    </div>
-     </div>
-          <!-- Passando nome e email como parâmetros na URL -->
-        <a href="contato/contato.html?nome=${encodeURIComponent(perfil.nome)}&email=${encodeURIComponent(perfil.email)}">Acessar</a>
-    </div>
+        <!-- Adicione qualquer outra informação que desejar -->
+      </div>
     `;
-}).join('');
+
+  } catch (error) {
+    console.error("Erro ao carregar o perfil:", error);
+  }
 }
 
-document.addEventListener("DOMContentLoaded", carregaPerfis);
+document.addEventListener("DOMContentLoaded", carregarPerfil);

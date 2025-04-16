@@ -117,7 +117,7 @@ header img {
     color: white;
 }
 
-.geral a {
+.geral button{
     text-decoration: none;
     list-style: none;
     position: absolute;
